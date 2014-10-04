@@ -10,7 +10,6 @@ module GogoCsv
   end
 
   class ::Array
-
     def save!(path)
       raise 'should be array of array' unless arys?
       CSV.open(File.expand_path(path), "wb") do |csv|
@@ -21,6 +20,5 @@ module GogoCsv
     private def arys?
       all? { |item| item.is_a?(Array) }
     end
-
   end
 end
