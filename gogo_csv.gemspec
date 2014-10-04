@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = GogoCsv::VERSION
   spec.authors       = ["gogotanaka"]
   spec.email         = ["mail@tanakakazuki.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Extend interface between Array and CSV.}
+  spec.description   = %q{Extend interface between Array and CSV.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
