@@ -6,7 +6,7 @@ Extend interface between Array and CSV.
 
 Install gem as you like. 
 
-    $ gem install gogo_driver
+    $ gem install gogo_csv
 
 
 ## Demo
