@@ -17,8 +17,10 @@ module GogoCsv
       end
     end
 
-    private def arys?
-      all? { |item| item.is_a?(Array) }
-    end
+    private
+    
+      def arys?
+        all? { |item| item.is_a?(Array) }
+      end
   end
 end
