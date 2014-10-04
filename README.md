@@ -1,31 +1,21 @@
 # GogoCsv
 
-TODO: Write a gem description
+Extend interface between Array and CSV.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'gogo_csv'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Install gem as you like. 
 
     $ gem install gogo_csv
 
-## Usage
 
-TODO: Write usage instructions here
+## Demo
+```
+include GogoCsv
 
-## Contributing
+arys = read('~/input.csv')
 
-1. Fork it ( https://github.com/[my-github-username]/gogo_csv/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+# something you want to do ..
+
+arys.save!('~/output.csv')
+```
