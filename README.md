@@ -11,6 +11,7 @@ Install gem as you like.
 
 ## Demo
 ```
+require 'gogo_csv'
 include GogoCsv
 
 arys = read('~/input.csv')
