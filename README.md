@@ -4,7 +4,7 @@ Extend interface between Array and CSV.
 
 ## Installation
 
-Install gem as you like. 
+Install gem as you like.
 
     $ gem install gogo_csv
 
@@ -12,7 +12,6 @@ Install gem as you like.
 ## Demo
 ```
 require 'gogo_csv'
-include GogoCsv
 
 arys = read('~/input.csv')
 

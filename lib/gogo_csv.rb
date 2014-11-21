@@ -21,3 +21,5 @@ module GogoCsv
   end
   module_function :open
 end
+
+include GogoCsv
