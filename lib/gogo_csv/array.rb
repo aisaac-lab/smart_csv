@@ -9,8 +9,8 @@ module GogoCsv
       end
     end
 
-    def map_cal(from_num, to_num=from_num, &blk)
-      map { |row| row[to_num] = blk.(row[from_num]) }
+    def map_col!(from_num, to_num=from_num, &blk)
+      each { |row| row[to_num] = blk.(row[from_num]) }
     end
 
     private
