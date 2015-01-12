@@ -19,6 +19,7 @@ module GogoCsv
   end
 end
 
-@arys = _
-
 include GogoCsv
+
+
+@arys = _('./input.csv')
