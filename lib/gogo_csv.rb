@@ -6,7 +6,7 @@ module GogoCsv
   require 'csv'
   require 'matrix'
 
-  def _(path, format=:arys)
+  def _(path='./input.csv', format=:arys)
     $current_path = path
     arys = CSV.read(
       File.expand_path(path)
@@ -18,5 +18,7 @@ module GogoCsv
     end
   end
 end
+
+@arys = _
 
 include GogoCsv

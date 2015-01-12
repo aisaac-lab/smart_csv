@@ -1,6 +1,6 @@
 module GogoCsv
   class ::Array
-    def save!(path=nil)
+    def save!(path='./output.csv')
       raise 'should be array of array' unless arys?
       raise 'Should supply file path' unless path ||= $current_path
 
