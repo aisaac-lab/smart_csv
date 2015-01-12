@@ -13,9 +13,9 @@ Install gem as you like.
 ```
 require 'gogo_csv'
 
-arys = read('~/input.csv')
+arys = _ '~/input.csv'
 
 # something you want to do ..
 
-arys.save!('~/output.csv')
+arys.save!
 ```

@@ -6,20 +6,17 @@ module GogoCsv
   require 'csv'
   require 'matrix'
 
-  def open(path, format=:matrix)
-    $path = path
+  def _(path, format=:arys)
+    $current_path = path
     arys = CSV.read(
       File.expand_path(path)
     )
 
-    case format
-    when :matrix
-      Matrix[*arys]
-    when :arys
-      arys
+    $original_csv = case format
+    when :matrix then Matrix[*arys]
+    when :arys   then arys
     end
   end
-  module_function :open
 end
 
 include GogoCsv
